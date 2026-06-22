@@ -1,5 +1,8 @@
 # Análisis de Empresas del S&P 500
 
+### Dirreción donde se aloja en línea:
+https://stocks-analysis-escom.streamlit.app
+
 ## Descripción del Proyecto
 
 Aplicación interactiva construida con **Streamlit** para explorar y analizar datos financieros de las empresas del índice S&P 500. La herramienta permite visualizar distribuciones, correlaciones y comparativas entre empresas y sectores de forma intuitiva.
@@ -136,6 +139,7 @@ jupyter notebook data/exploration_S&P_500.ipynb
 
 ## Autores
 @marcoBartolo55
+
 @Valeria14022001
 
 ---
