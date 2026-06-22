@@ -157,7 +157,7 @@ if option == "Correlaciones entre Variables":
     style_corr = ["coolwarm", "viridis", "plasma", "inferno", "magma"]
     selected_style = st.selectbox("Selecciona un estilo de color para la matriz de correlación:", style_corr)
 
-    correlation_type = ["Pearson", "Spearman", "Kendall"]
+    correlation_type = ["Pearson", "Spearman"]
     selected_correlation = st.selectbox("Selecciona el tipo de correlación:", correlation_type)
 
     df_numerico = df.select_dtypes(include=['number'])
@@ -183,6 +183,7 @@ if option == "Correlaciones entre Variables":
         st.pyplot(plt)
         plt.clf()
 
+    #! Depreceated
     elif selected_correlation == "Kendall":
         corr_matrix = df_numerico.corr(method='kendall')
         plt.title("Matriz de Correlación (Kendall)")
